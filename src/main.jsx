@@ -11,6 +11,8 @@ import "./styles/sections/Services.css"
 import "./styles/sections/WebDevServices.css"
 import "./styles/layout/Footer.css"
 
+import "./styles/Responsive.css"
+
 
 import App from './App.jsx'
 

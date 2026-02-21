@@ -6,12 +6,12 @@ export default function Services() {
             <section id="services">
                 <div className="container">
 
-                    <article>
-                        <div className="section-header">
-                            <h2>Servicios de Social Media</h2>
-                            <p>Soluciones completas para hacer crecer tu presencia digital</p>
-                        </div>
-                    </article>
+
+                    <div className="section-header">
+                        <h2>Servicios de Social Media</h2>
+                        <p>Soluciones completas para hacer crecer tu presencia digital</p>
+                    </div>
+
 
                     <article>
                         <div class="service-card">

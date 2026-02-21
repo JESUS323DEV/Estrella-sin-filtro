@@ -29,7 +29,25 @@
     padding-top: 7.5rem;
   }
 
+  #services,
+  #projects,
+  #webServices {
 
+    margin-top: 5rem;
+  }
+
+  #services,
+  #projects,
+  #contact {
+
+    scroll-margin-top: 8rem;
+  }
+
+  #webServices{
+    scroll-margin-top: 7rem;
+
+
+  }
   /* Quitar márgenes raros del navegador */
   html,
   body {

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { List } from "lucide-react"
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -14,6 +14,7 @@ export default function Header() {
                 <nav>
                     <div className="cont-nav">
                         <div className='logo'>
+
                             <span className='estrella'>Estrella</span>
                             <span className="sin">sin</span>
                             <span className="filtro">filtro</span>
@@ -32,11 +33,39 @@ export default function Header() {
                             {openMenu && (
                                 <div className='links-nav'>
                                     <ul>
-                                        <li><a href="#">Inicio</a></li>
-                                        <li><a href="#">Servicios</a></li>
-                                        <li><a href="#">Proyectos</a></li>
-                                        <li><a href="#">Desarrollo Web </a></li>
-                                        <li><a href="#">Contacto</a></li>
+                                        <li><Link to="/inicio"
+                                            onClick={() => {
+                                                setOpenMenu(false)
+                                            }}>
+                                            Inicio</Link></li>
+
+                                        <li><Link to="/servicios"
+                                            onClick={() => {
+                                                setOpenMenu(false)
+                                            }} >
+                                            Servicios
+                                        </Link></li>
+
+
+                                        <li><Link to="/proyectos"
+                                            onClick={() => {
+                                                setOpenMenu(false)
+                                            }}>
+                                            Proyectos
+                                        </Link></li>
+
+
+                                        <li><Link to="/desarrollo-web" onClick={() => {
+                                            setOpenMenu(false)
+                                        }}>
+                                            Desarrollo Web
+                                        </Link></li>
+
+
+                                        <li><Link to="/contacto" onClick={() => {
+                                            setOpenMenu(false)
+                                        }}>Contacto
+                                        </Link></li>
                                     </ul>
                                 </div>
 
