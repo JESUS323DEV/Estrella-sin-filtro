@@ -1,5 +1,9 @@
 import { Globe, Zap, Wrench, Check } from "lucide-react"
 
+import { Link } from "react-router-dom"
+
+import ScrollSections from "../components/ScrollSections"
+
 
 
 export default function WebDevServices() {
@@ -67,7 +71,7 @@ export default function WebDevServices() {
                                 <div className="title-card">
                                     <Wrench className="wrench" />
 
-                                    <h3>Mantenimiento y Soporte</h3>
+                                    <h3>Mantenimiento, soporte y actualizaciones</h3>
                                     <p>Actualizaciones y soporte técnico continuo para que tu web siempre esté al día.</p>
                                 </div>
 
@@ -85,7 +89,11 @@ export default function WebDevServices() {
                         </article>
 
                         <div className="cta1">
-                            <a href="#">Contáctanos</a>
+                            <Link to="/contacto"
+                                onClick={() => ScrollSections("contact")}
+                            >
+                                Contáctanos
+                            </Link>
                         </div>
 
                     </div>

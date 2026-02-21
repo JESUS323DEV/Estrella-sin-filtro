@@ -1,5 +1,10 @@
 import imgHero from "../assets/imgHero2.png"
 
+import { Link } from "react-router-dom"
+
+import ScrollSections from "../components/ScrollSections"
+
+
 export default function Hero() {
 
     return (
@@ -10,9 +15,19 @@ export default function Hero() {
                         <div className="hero-content">
                             <h1>Tu marca merece <span className="gradient-text">brillar</span> en redes</h1>
                             <p>Estrategias de social media personalizadas para marcas que quieren crecer y conectar con su audiencia de forma auténtica.</p>
+
                             <div className="cta-buttons">
-                                <a href="#contacto" className="btn btn-primary">Trabajemos juntos</a>
-                                <a href="#portfolio" className="btn btn-secondary">Ver proyectos</a>
+                                <Link to="/contacto"
+                                    className="btn btn-primary"
+                                    onClick={() => ScrollSections("contact")}
+                                >
+                                    Trabajemos juntos
+                                </Link>
+                                <Link to="/proyectos"
+                                    className="btn btn-secondary"
+                                    onClick={() => ScrollSections("projects")}
+                                >
+                                    Ver proyectos</Link>
                             </div>
                         </div>
 
@@ -21,7 +36,7 @@ export default function Hero() {
 
 
                             <div className="visual-content">
-                                <h5>Soy Estrella.</h5>
+                                <h5>Estrella Gonzales Ulloa</h5>
                                 <p>Periodista, locutora de radio, especialista en
                                     social media y creadora de contenido digital.</p>
                             </div>

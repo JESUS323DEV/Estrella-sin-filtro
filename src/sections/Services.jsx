@@ -1,4 +1,7 @@
 import { ChartSpline, Sparkles, UserStar, Vote } from "lucide-react"
+import { Link } from 'react-router-dom'
+import ScrollSections from "../components/ScrollSections"
+
 export default function Services() {
 
     return (
@@ -44,6 +47,13 @@ export default function Services() {
                             <p>Administración completa de tus perfiles en Instagram, Facebook y TikTok. Informes detallados mensuales con métricas clave y optimización de estrategias.</p>
                         </div>
                     </article>
+
+                    <div className="cta-services">
+                        <Link to="/contacto"
+                            onClick={() => ScrollSections("contact")}
+                        >Más información</Link>
+                    </div>
+
                 </div>
             </section>
 

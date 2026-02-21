@@ -14,6 +14,7 @@ export default function ScrollHandler() {
     };
 
     useEffect(() => {
+         console.log('🔍 pathname:', pathname);  // ← añade
         // Si es inicio, scroll arriba directo
         if (pathname === '/' || pathname === '/inicio') {
             window.scrollTo(0, 0);
@@ -22,10 +23,12 @@ export default function ScrollHandler() {
 
         // Para el resto de secciones
         const sectionId = routeToId[pathname];
+          console.log('🎯 sectionId:', sectionId);  // ← añade
 
         if (sectionId) {
             setTimeout(() => {
                 const element = document.getElementById(sectionId);
+                  console.log('📍 element:', element);  // ← añade
                 element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
         }

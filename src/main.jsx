@@ -8,8 +8,11 @@ import './styles/index.css'
 import './styles/layout/Header.css'
 import "./styles/sections/Hero.css"
 import "./styles/sections/Services.css"
+import "./styles/sections/Projects.css"
 import "./styles/sections/WebDevServices.css"
+import "./styles/sections/Contact.css"
 import "./styles/layout/Footer.css"
+
 
 import "./styles/Responsive.css"
 

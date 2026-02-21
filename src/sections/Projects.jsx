@@ -1,5 +1,4 @@
 import ProjectCard from "../components/ProjectCard";
-import "../styles/sections/Projects.css"
 
 // IMG PROJECTS
 //casa peru
@@ -63,7 +62,7 @@ export default function Projects() {
                         {/* Jonald*/}
                         <ProjectCard
                             logo={jonaldLogo}
-                            title="Jonald (marca personal)"
+                            title="Jonald"
                             description="Estrategia completa de redes sociales para restaurante peruano. Contenido gastronómico que conecta con la cultura y sabor auténtico."
                             images={[jonald1, jonald2, jonald3]}
                             results="+180% de engagement | 50K nuevos seguidores en 6 meses"

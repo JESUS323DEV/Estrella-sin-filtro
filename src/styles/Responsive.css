@@ -40,13 +40,16 @@
     .hero-content {
 
 
-        width: 70%;
+
+        width: 80%;
         margin: auto;
+
     }
 
     .hero-content h1 {
 
-        font-size: 4rem;
+        font-size: 5rem;
+
     }
 
     /*=======================================SERVICES=================================*/
@@ -69,10 +72,12 @@
         padding: 1rem;
     }
 
-    .section-header {
+    .section-header,
+    .cta-services {
         grid-column: 1 / -1;
 
     }
+
 
 }
 
@@ -90,6 +95,142 @@
         padding: 5px;
         z-index: 9999;
     }
+
+    /*=======================================HERO=================================*/
+
+
+    .hero-content {
+
+        padding: 1rem;
+
+        gap: 2rem;
+
+
+
+    }
+
+    h2 {
+
+        font-size: 3rem !important;
+    }
+
+    .hero-container {
+
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+        margin-top: 1rem;
+
+
+
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 1.4rem;
+
+
+    }
+
+    .hero-content p {
+
+        text-align: left;
+        padding: 0;
+
+
+    }
+
+
+
+    .hero-visual {
+
+        margin-top: 0;
+    }
+
+    .hero-visual p {
+
+        font-size: 0.8rem;
+    }
+
+    .hero-visual h5 {
+
+        font-size: 1rem;
+    }
+
+    .hero-visual img {
+
+        width: 200px;
+        margin-top: 2.5rem;
+
+
+
+
+    }
+
+    /*=======================================SERVICES=================================*/
+
+    .service-card {
+
+        height: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .section-header,
+    .cta-services {
+        grid-column: 1 / -1;
+
+    }
+
+    /*=======================================PROJECTS=================================*/
+
+    .container-projects {
+
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+    /*=======================================CONTACT=================================*/
+
+
+
+    .container-contact {
+
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitle-contact {
+        grid-column: 1/-1;
+    }
+
+
+
+
+    .subtitle-contact p {
+
+        width: 80%;
+        margin: auto;
+    }
+
 }
 
 /* LG Tablets horizontales / laptops pequeñas-mini LG (992px – 1199px) */
@@ -108,6 +249,198 @@
         z-index: 9999;
 
     }
+
+    /*=======================================HERO=================================*/
+    h2 {
+
+        font-size: 3.3rem !important;
+    }
+
+    .hero-content {
+
+        padding: 1rem;
+        gap: 2rem;
+
+        width: 70%;
+        margin: auto;
+
+
+
+    }
+
+    .hero-container {
+
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        align-items: center;
+        margin-top: 1rem;
+
+        width: 90%;
+        margin: auto;
+
+
+
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+
+
+
+    }
+
+    .hero-content p {
+
+        text-align: left;
+        padding: 0;
+
+
+    }
+
+
+
+    .hero-visual {
+
+        margin-top: 0;
+    }
+
+    .hero-visual p {
+
+        font-size: 0.8rem;
+    }
+
+    .hero-visual h5 {
+
+        font-size: 1rem;
+    }
+
+    .hero-visual img {
+
+        width: 300px;
+        margin-top: 2.5rem;
+
+
+
+
+    }
+
+    /*=======================================SERVICES=================================*/
+
+    .service-card {
+
+        height: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        gap: 2rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .section-header,
+    .cta-services {
+        grid-column: 1 / -1;
+
+    }
+
+    /*=======================================PROJECTS=================================*/
+
+    .container-projects {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+
+    .project-card {
+
+        height: 900px;
+    }
+
+    /*=======================================CONTACT=================================*/
+
+
+
+    .container-contact {
+
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitle-contact {
+        grid-column: 1/-1;
+    }
+
+
+
+
+    .subtitle-contact p {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    /*=======================================WEB SERVICES=================================*/
+
+
+    .container-webServices {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .title,
+    .cta1 {
+
+        grid-column: 1/-1;
+    }
+
+    .title {
+
+        margin-bottom: 4rem;
+    }
+
+    .cta1 {
+
+        margin-top: 4rem;
+    }
+
+    article .cardServices {
+
+        min-height: 510px;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .body-card ul {
+
+        margin: 0;
+        min-height: 220px;
+
+    }
+
+
+
+
+
 }
 
 /*SXL: laptos pequeñas(1200px – 1279px) */
@@ -143,6 +476,194 @@
         z-index: 9999;
     }
 
+    /*=======================================HERO=================================*/
+    h2 {
+
+        font-size: 3.6rem !important;
+    }
+
+    .hero-content {
+
+        padding: 2.5rem 1rem;
+        gap: 2rem;
+
+        width: 90%;
+        margin: auto;
+
+
+
+    }
+
+    .hero-container {
+
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        align-items: center;
+        margin-top: 1rem;
+
+        width: 70%;
+        margin: auto;
+
+
+
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 6rem;
+        margin: 0;
+        padding: 0;
+
+
+
+    }
+
+    .hero-content p {
+
+        text-align: left;
+        padding: 0;
+        font-size: 1.3rem;
+
+
+    }
+
+
+
+    .hero-visual {
+
+        margin-top: 0;
+    }
+
+    .hero-visual p {
+
+        font-size: 1rem;
+    }
+
+    .hero-visual h5 {
+
+        font-size: 1.2rem;
+    }
+
+    .hero-visual img {
+
+        width: 300px;
+        margin-top: 2.5rem;
+
+
+
+
+    }
+
+    /*=======================================SERVICES=================================*/
+
+    .service-card {
+
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        gap: 2rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .section-header,
+    .cta-services {
+        grid-column: 1 / -1;
+
+    }
+
+    /*=======================================PROJECTS=================================*/
+
+    .container-projects {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        margin: auto;
+    }
+
+    .project-card {
+
+        height: 800px;
+    }
+
+    /*=======================================CONTACT=================================*/
+
+
+
+    .container-contact {
+
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitle-contact {
+        grid-column: 1/-1;
+    }
+
+
+
+
+    .subtitle-contact p {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    /*=======================================WEB SERVICES=================================*/
+
+
+    .container-webServices {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .title,
+    .cta1 {
+
+        grid-column: 1/-1;
+    }
+
+    .title {
+
+        margin-bottom: 4rem;
+    }
+
+    .cta1 {
+
+        margin-top: 4rem;
+    }
+
+    article .cardServices {
+
+        min-height: 510px;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .body-card ul {
+
+        margin: 0;
+        min-height: 220px;
+
+    }
+
 }
 
 /*XXL: Pantallas grandes ≥1400px */
@@ -158,5 +679,193 @@
         color: rgb(255, 255, 255);
         padding: 5px;
         z-index: 9999;
+    }
+
+    /*=======================================HERO=================================*/
+    h2 {
+
+        font-size: 3.8rem !important;
+    }
+
+    .hero-content {
+
+        padding: 2.5rem 1rem;
+        gap: 2rem;
+
+        width: 90%;
+        margin: auto;
+
+
+
+    }
+
+    .hero-container {
+
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        align-items: center;
+        margin-top: 1rem;
+
+        width: 70%;
+        margin: auto;
+
+
+
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 6rem;
+        margin: 0;
+        padding: 0;
+
+
+
+    }
+
+    .hero-content p {
+
+        text-align: left;
+        padding: 0;
+        font-size: 1.3rem;
+
+
+    }
+
+
+
+    .hero-visual {
+
+        margin-top: 0;
+    }
+
+    .hero-visual p {
+
+        font-size: 1rem;
+    }
+
+    .hero-visual h5 {
+
+        font-size: 1.2rem;
+    }
+
+    .hero-visual img {
+
+        width: 300px;
+        margin-top: 2.5rem;
+
+
+
+
+    }
+
+    /*=======================================SERVICES=================================*/
+
+    .service-card {
+
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        gap: 2rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .section-header,
+    .cta-services {
+        grid-column: 1 / -1;
+
+    }
+
+    /*=======================================PROJECTS=================================*/
+
+    .container-projects {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        margin: auto;
+    }
+
+    .project-card {
+
+        height: 900px;
+    }
+
+    /*=======================================CONTACT=================================*/
+
+
+
+    .container-contact {
+
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitle-contact {
+        grid-column: 1/-1;
+    }
+
+
+
+
+    .subtitle-contact p {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    /*=======================================WEB SERVICES=================================*/
+
+
+    .container-webServices {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .title,
+    .cta1 {
+
+        grid-column: 1/-1;
+    }
+
+    .title {
+
+        margin-bottom: 4rem;
+    }
+
+    .cta1 {
+
+        margin-top: 4rem;
+    }
+
+    article .cardServices {
+
+        min-height: 510px;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .body-card ul {
+
+        margin: 0;
+        min-height: 220px;
+
     }
 }

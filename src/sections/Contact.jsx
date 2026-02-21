@@ -4,7 +4,6 @@ import tikTok from "../assets/icon-redes/tik-tok.png"
 import email from "../assets/icon-redes/email.png"
 import Whatsapp from "../assets/icon-redes/icon-whatsapp.png"
 
-import "../styles/sections/Contact.css"
 export default function Contact() {
 
     return (
@@ -18,9 +17,9 @@ export default function Contact() {
                     </div>
 
 
+
+
                     <div className="container-contact">
-
-
                         <div className="subtitle-contact">
                             <h4>Conectemos</h4>
                             <p>Estoy aquí para ayudarte a llevar tu marca al siguiente nivel. Ya sea que necesites gestión de redes sociales, desarrollo web, o ambos, trabajaremos juntos para lograr tus objetivos.</p>
@@ -49,10 +48,10 @@ export default function Contact() {
                             </div>
                         </div>
 
-
-
-
                     </div>
+
+
+
 
 
                 </div>

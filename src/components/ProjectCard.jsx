@@ -49,7 +49,6 @@ export default function ProjectCard({ logo, title, description, images, results 
                 </div>
             </div>
 
-            <p className="project-results">{results}</p>
         </div>
     );
 }
