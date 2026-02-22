@@ -3,6 +3,7 @@
     background: linear-gradient(135deg, #FAFAFA 0%, #FFF5F8 100%);
     padding-bottom: 2rem;
 
+
 }
 
 .hero::before {
@@ -37,10 +38,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+
 }
 
 .hero-content h1 {
     padding: 0 1.5rem;
+    margin: auto;
+
     margin-top: 2rem;
     font-size: 3.8rem;
     font-weight: bold;
@@ -49,6 +54,12 @@
     color: var(--color-primary);
     letter-spacing: -0.03em;
     animation: fadeInUp 0.8s ease-out 0.2s both;
+
+
+    width: 90%;
+    line-height: 0.9;
+    text-align: left;
+
 }
 
 .hero-content .gradient-text {
@@ -61,10 +72,12 @@
 .hero-content p {
     font-size: 1.2rem;
     color: var(--color-text-light);
+    width: 90%;
+    margin: auto;
     margin-bottom: 2.5rem;
-    max-width: 500px;
-    padding:0 1.5rem;
-    line-height: 1.5;
+    padding: 0 1.5rem;
+    line-height: 1.3;
+
 
     animation: fadeInUp 0.8s ease-out 0.4s both;
 }
@@ -160,6 +173,7 @@
     text-align: center;
 
 }
+
 .visual-content h5 {
 
     font-size: 1.3rem;

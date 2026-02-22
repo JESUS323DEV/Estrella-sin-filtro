@@ -2,13 +2,13 @@ import ProjectCard from "../components/ProjectCard";
 
 // IMG PROJECTS
 //casa peru
-import casaPeruLogo from '../assets/projects/casa-peru/casa-peru-logo.png';
+import casaPeruLogo from '../assets/projects/casa-peru/casa-peru-logo1.png';
 import casaPeru1 from '../assets/projects/casa-peru/casa-peru1.png';
 import casaPeru2 from '../assets/projects/casa-peru/casa-peru2.png';
 import casaPeru3 from '../assets/projects/casa-peru/casa-peru3.png';
 
 //quqaw
-import quqawLogo from "../assets/projects/quqaw/quqaw-logo.png"
+import quqawLogo from "../assets/projects/quqaw/quqaw-logo1.png"
 import quqaw1 from "../assets/projects/quqaw/quqaw-1.png"
 import quqaw2 from "../assets/projects/quqaw/quqaw-2.png"
 import quqaw3 from "../assets/projects/quqaw/quqaw-3.png"
@@ -16,19 +16,19 @@ import quqaw4 from "../assets/projects/quqaw/quqaw-4.png"
 
 //Laura Serra
 
-import lauraSerraLogo from "../assets/projects/laura-serra/laura-serra-logo.png"
+import lauraSerraLogo from "../assets/projects/laura-serra/laura-serra-logo1.png"
 import lauraSerra1 from "../assets/projects/laura-serra/laura-serra1.png"
 
 //the luxury
 
-import luxuryLogo from "../assets/projects/theluxury/luxury-logo.png"
+import luxuryLogo from "../assets/projects/theluxury/luxury-logo1.png"
 import luxury1 from "../assets/projects/theluxury/luxury1.png"
 import luxury2 from "../assets/projects/theluxury/luxury2.png"
 import luxury3 from "../assets/projects/theluxury/luxury3.png"
 
 //Jonald
 
-import jonaldLogo from "../assets/projects/jonald/jonald-logo.png"
+import jonaldLogo from "../assets/projects/jonald/jonald-logo1.png"
 import jonald1 from "../assets/projects/jonald/jonald-1.png"
 import jonald2 from "../assets/projects/jonald/jonald-2.png"
 import jonald3 from "../assets/projects/jonald/jonald-3.png"

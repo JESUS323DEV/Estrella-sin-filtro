@@ -8,6 +8,9 @@
         overflow: hidden;
 
         width: 90%;
+
+        height: 400px;
+        max-height: 395px;
         margin: auto;
 
     }
