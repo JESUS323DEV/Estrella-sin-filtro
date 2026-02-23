@@ -3,39 +3,10 @@
    ===================== */
 
 /* Móviles XS (≤575px) */
-@media (max-width: 575px) {
-    body::before {
-        content: "XS";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(185, 6, 6);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-
-    }
-
-
-}
+@media (max-width: 575px) {}
 
 /*SM: Móviles pequeños verticales y móviles estándar(576px – 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
-    body::before {
-        content: "SM";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(0, 255, 30);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-
-    }
 
     /*=======================================HERO=================================*/
 
@@ -86,18 +57,6 @@
 
 /*MD: Tablets verticales (768px – 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-    body::before {
-        content: "MD";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(1, 22, 255);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-    }
 
     /*=======================================HERO=================================*/
 
@@ -244,22 +203,10 @@
 
 }
 
-/* LG Tablets horizontales / laptops pequeñas-mini LG (992px – 1199px) */
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    body::before {
-        content: "LG";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(196, 1, 255);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-
-    }
 
     #services,
     #projects {
@@ -434,7 +381,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
 
     }
 
@@ -578,18 +525,7 @@
 
 /*SXL: laptos pequeñas(1200px – 1279px) */
 @media (min-width: 1200px) and (max-width: 1279px) {
-    body::before {
-        content: "1200px-1279px";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 20px;
-        background: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        padding: 5px;
-        z-index: 9999;
-    }
+
 
 
     #services,
@@ -892,18 +828,7 @@
 /*XL laptos grandes (1280px – 1399px) */
 @media (min-width: 1280px) and (max-width: 1399px) {
 
-    body::before {
-        content: "XL";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 20px;
-        background: rgb(255, 102, 0);
-        color: rgb(255, 255, 255);
-        padding: 5px;
-        z-index: 9999;
-    }
+
 
     #services,
     #projects {
@@ -1071,7 +996,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
 
     }
 
@@ -1203,18 +1128,6 @@
 
 /*XXL: Pantallas grandes ≥1400px */
 @media (min-width: 1400px) {
-    body::before {
-        content: "XXL";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 20px;
-        background: rgb(135, 181, 255);
-        color: rgb(255, 255, 255);
-        padding: 5px;
-        z-index: 9999;
-    }
 
     #services,
     #projects {
@@ -1511,5 +1424,103 @@
         margin: 0;
         min-height: 220px;
 
+    }
+}
+
+
+/* ===== DESKTOP (1024px+) ===== */
+@media (min-width: 992px) {
+
+    .cont-nav {
+        padding: 1rem 3rem;
+    }
+
+    .cont-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Desktop menu */
+    .desktop-menu {
+        display: flex !important;
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        min-height: auto !important;
+        background: none !important;
+        z-index: auto !important;
+    }
+
+    .desktop-menu::before {
+        display: none !important;
+    }
+
+    .desktop-menu ul {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 2.5rem !important;
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        font-size: 1rem !important;
+    }
+
+    .desktop-menu li {
+        border-bottom: none !important;
+        padding: 0 !important;
+    }
+
+    .desktop-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        padding-bottom: 0.5rem;
+        display: inline-block;
+    }
+
+    .desktop-menu ul li a:hover {
+        color: var(--color-accent);
+    }
+
+    /* Link activo - color y negrita */
+    .desktop-menu ul li a.active {
+        color: var(--color-accent);
+        font-weight: 700;
+    }
+
+    /* Link activo - subrayado */
+    .desktop-menu ul li a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--color-accent);
+        animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    /* Ocultar burger */
+    .burger {
+        display: none !important;
+    }
+
+    /* Ocultar mobile menu */
+    .mobile-menu {
+        display: none !important;
     }
 }

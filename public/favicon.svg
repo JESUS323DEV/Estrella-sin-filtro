@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo -->
+  <circle cx="50" cy="50" r="50" fill="#FF6B9D"/>
+  
+  <!-- Letra E -->
+  <text 
+    x="50" 
+    y="72" 
+    font-size="60" 
+    fill="white" 
+    text-anchor="middle" 
+    font-family="sans-serif"
+    font-weight="bold">E</text>
+</svg>
