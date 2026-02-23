@@ -18,7 +18,7 @@ export default function ProjectCard({ logo, title, description, images, results 
         <div className="project-card">
             <div className="project-header">
                 <h3>{title}</h3>
-                <img src={logo} alt={title} className="project-logo" />
+                <img src={logo} loading='lazy' alt={title} className="project-logo" />
             </div>
 
             <p className="project-description">{description}</p>
@@ -32,6 +32,7 @@ export default function ProjectCard({ logo, title, description, images, results 
                     src={images[currentImage]} 
                     alt={`${title} - imagen ${currentImage + 1}`}
                     className="gallery-image"
+                    loading='lazy'
                 />
 
                 <button onClick={nextImage} className="gallery-btn next">

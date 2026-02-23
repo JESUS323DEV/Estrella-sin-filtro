@@ -30,11 +30,11 @@ export default function Contact() {
                             <h4>Escríbeme y te atenderé lo antes posible</h4>
                             <div className="contact-direct" >
                                 <a href="https://wa.me/+34640839981" target="_blank">
-                                    <img src={Whatsapp} alt="Whatsapp" />
+                                    <img src={Whatsapp} loading="lazy" alt="Whatsapp" />
                                 </a>
 
                                 <a href="mailto:estrella@gmail.com" target="_blank">
-                                    <img src={email} alt="Email" />
+                                    <img src={email} loading="lazy" alt="Email" />
                                 </a>
                             </div>
                         </div>
@@ -42,9 +42,22 @@ export default function Contact() {
                         <div className="content-direct">
                             <h4>Si prefieres contactarme por redes sociales</h4>
                             <div className="contact-direct">
-                                <a href="#" target="_blank"><img src={insta} alt="Instagram" /></a>
-                                <a href="#" target="_blank"><img src={Face} alt="FaceBook" /></a>
-                                <a href="#" target="_blank"><img src={tikTok} alt="Tik-Tok" /></a>
+
+                                <a href="https://www.instagram.com/estrellasinfiltro"
+                                    target="_blank">
+
+                                    <img src={insta} loading="lazy" alt="Instagram" />
+                                </a>
+
+                                <a href="#" target="_blank">
+
+                                    <img loading="lazy" src={Face} alt="FaceBook" />
+                                </a>
+
+
+                                <a href="https://www.tiktok.com/@estrellasinfiltro" target="_blank">
+                                    <img loading="lazy" src={tikTok} alt="Tik-Tok" />
+                                </a>
                             </div>
                         </div>
 
