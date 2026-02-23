@@ -589,8 +589,304 @@
         color: rgb(255, 255, 255);
         padding: 5px;
         z-index: 9999;
+    }
+
+
+    #services,
+    #projects {
+
+        scroll-margin-top: 10rem;
+    }
+
+
+    #contact {
+
+        scroll-margin-top: 5rem;
 
     }
+
+    #webServices {
+        scroll-margin-top: 8rem;
+
+
+    }
+
+    /*=======================================HEADER=================================*/
+
+
+
+    .cont-nav {
+        justify-content: space-around;
+        padding: 1rem 3rem;
+    }
+
+    .cont-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Mostrar desktop menu */
+    .desktop-menu {
+        display: flex !important;
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        min-height: auto !important;
+        background: none !important;
+        z-index: auto !important;
+    }
+
+    .desktop-menu::before {
+        display: none !important;
+    }
+
+    .desktop-menu ul {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 2.5rem !important;
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        font-size: 1rem !important;
+    }
+
+    .desktop-menu li {
+        border-bottom: none !important;
+        padding: 0 !important;
+    }
+
+    .desktop-menu li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    .desktop-menu li a:hover {
+        color: var(--color-accent);
+    }
+
+    /* Ocultar burger */
+    .burger {
+        display: none !important;
+    }
+
+    /* Ocultar mobile menu */
+    .mobile-menu {
+        display: none !important;
+    }
+
+    /*=======================================HERO=================================*/
+    h2 {
+
+        font-size: 3.6rem !important;
+    }
+
+    .hero-content {
+
+        padding: 2.5rem 1rem;
+        gap: 2rem;
+
+    }
+
+    .hero-container {
+
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        align-items: center;
+
+
+        width: 900px;
+        max-width: 980px !important;
+
+        margin: auto;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 5.5rem;
+
+    }
+
+    .hero-content p {
+
+        text-align: left;
+        padding: 0;
+        font-size: 1.3rem;
+        width: 80%;
+
+
+    }
+
+
+
+    .hero-visual {
+
+        margin-top: 0;
+    }
+
+    .hero-visual p {
+
+        font-size: 1rem;
+
+    }
+
+    .hero-visual h5 {
+
+        font-size: 1.2rem;
+    }
+
+    .hero-visual img {
+
+        width: 300px;
+        margin-top: 2.5rem;
+
+
+    }
+
+
+
+    /*=======================================SERVICES=================================*/
+
+    .service-card {
+
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        gap: 2rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .section-header,
+    .cta-services {
+        grid-column: 1 / -1;
+    }
+
+    .section-header p {
+
+        font-size: 1.1rem;
+        width: 30rem;
+    }
+
+
+    /*=======================================PROJECTS=================================*/
+
+    .container-projects {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: auto;
+    }
+
+    .project-card {
+
+        height: 800px;
+    }
+
+
+
+    .project-logo {
+
+        width: 300px !important;
+    }
+
+    .gallery-image {
+
+        height: 400px;
+    }
+
+    /*=======================================CONTACT=================================*/
+
+
+
+    .container-contact {
+
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitle-contact {
+        grid-column: 1/-1;
+    }
+
+    .title-contact p {
+        width: 33rem;
+        font-size: 1.2rem;
+
+    }
+
+
+    .subtitle-contact p {
+
+        width: 50%;
+        margin: auto;
+    }
+
+    .content-direct h4 {
+
+        font-size: 1.3rem;
+    }
+
+    /*=======================================WEB SERVICES=================================*/
+
+
+    .container-webServices {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .title,
+    .cta1 {
+
+        grid-column: 1/-1;
+    }
+
+    .title {
+
+        margin-bottom: 4rem;
+    }
+
+    .cta1 {
+
+        margin-top: 4rem;
+    }
+
+    article .cardServices {
+
+        min-height: 510px;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .body-card ul {
+
+        margin: 0;
+        min-height: 220px;
+
+    }
+
+
 }
 
 /*XL laptos grandes (1280px – 1399px) */
@@ -1010,7 +1306,7 @@
     /*=======================================HERO=================================*/
     h2 {
 
-        font-size: 3.8rem !important;
+        font-size: 3.6rem !important;
     }
 
     .hero-content {
@@ -1018,11 +1314,10 @@
         padding: 2.5rem 1rem;
         gap: 2rem;
 
-        width: 90%;
+        gap: 0;
+
+        width: 800px;
         margin: auto;
-
-
-
 
 
     }
@@ -1030,36 +1325,32 @@
     .hero-container {
 
         display: grid;
-        grid-template-columns: 1.7fr 1fr;
+        grid-template-columns: 3fr 1fr;
         align-items: center;
-
-
-        width: 1000px;
-        max-width: 980px !important;
-
+        width: 1300px;
+        max-width: 1400px !important;
         margin: auto;
-
-        margin-top: 2.5rem !important;
-
+        margin-top: 4rem !important;
 
     }
 
     .hero-content h1 {
 
-        font-size: 6rem;
+        font-size: 6.5rem;
+
+
 
     }
 
     .hero-content p {
 
         text-align: left;
-        padding: 0;
         font-size: 1.3rem;
-        width: 80% ;
 
 
 
     }
+
 
 
 
@@ -1070,20 +1361,18 @@
 
     .hero-visual p {
 
-        font-size: 0.8rem;
+        font-size: 1rem;
+
     }
 
     .hero-visual h5 {
 
-        font-size: 0.9rem !important;
+        font-size: 1.2rem;
     }
 
     .hero-visual img {
 
-        width: 260px;
-        margin-top: 2.5rem;
-
-
+        width: 250px;
 
 
     }
@@ -1092,7 +1381,7 @@
 
     .service-card {
 
-        height: 350px;
+        height: 500px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1104,9 +1393,9 @@
     .container {
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: 1rem;
-        gap: 2rem;
+        gap: 3rem;
         width: 70%;
         margin: auto;
     }
