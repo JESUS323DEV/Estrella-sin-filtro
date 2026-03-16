@@ -52,7 +52,7 @@ export default function Projects() {
                         <ProjectCard
                             logo={casaPeruLogo}
                             title="Casa Perú"
-                            description="Desarrollo una estrategia integral de redes sociales para el restaurante peruano Casa Perú, creando contenido gastronómico que conecta con la cultura y el sabor auténtico."
+                            description="Desarrollo una estrategia integral de redes sociales para el restaurante peruano Casa Perú, creando contenido gastronómico que conecta con la cultura y el sabor auténtico. "
                             images={[casaPeru1, casaPeru2, casaPeru3]}
                             results="Producción de contenido | Reels y videos gastronómicos | crecimiento digital.  "
                         />
@@ -63,7 +63,7 @@ export default function Projects() {
                         <ProjectCard
                             logo={jonaldLogo}
                             title="Jonald"
-                            description="Desarrollo una estrategia integral de redes sociales para la marca personal artística, potenciando su identidad como cantante y compositor. Creo contenido que transmite su energía, presencia escénica y conexión con el público, reforzando su imagen y posicionamiento digital."
+                            description="Desarrollo una estrategia integral de redes sociales para la marca personal artística, potenciando su identidad como cantante y compositor. Creo contenido que transmite."
                             images={[jonald1, jonald2, jonald3]}
                             results=" Producción de contenido| Impacto | Reels y videos | Crecimiento digital. "
                         />

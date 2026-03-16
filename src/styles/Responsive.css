@@ -1523,4 +1523,11 @@
     .mobile-menu {
         display: none !important;
     }
+
+    
+
+    .project-card {
+
+        min-height: 900px;
+    }
 }
