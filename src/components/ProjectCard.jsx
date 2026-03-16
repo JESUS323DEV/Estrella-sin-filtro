@@ -22,6 +22,7 @@ export default function ProjectCard({ logo, title, description, images, results 
             </div>
 
             <p className="project-description">{description}</p>
+            <p className='project-results'>{results}</p>
 
             <div className="project-gallery">
                 <button onClick={prevImage} className="gallery-btn prev">

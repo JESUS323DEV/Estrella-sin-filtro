@@ -107,5 +107,7 @@
 .project-results {
     font-weight: 600;
     color: #FF6B9D;
-    margin-top: 1rem;
+    font-size: 0.8rem;
+    width: 95%;
+    margin: auto;
 }

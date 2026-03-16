@@ -52,9 +52,9 @@ export default function Projects() {
                         <ProjectCard
                             logo={casaPeruLogo}
                             title="Casa Perú"
-                            description="Estrategia completa de redes sociales para restaurante peruano. Contenido gastronómico que conecta con la cultura y sabor auténtico."
+                            description="Desarrollo una estrategia integral de redes sociales para el restaurante peruano Casa Perú, creando contenido gastronómico que conecta con la cultura y el sabor auténtico."
                             images={[casaPeru1, casaPeru2, casaPeru3]}
-                            results="+180% de engagement | 50K nuevos seguidores en 6 meses"
+                            results="Producción de contenido | Reels y videos gastronómicos | crecimiento digital.  "
                         />
                     </article>
 
@@ -63,9 +63,9 @@ export default function Projects() {
                         <ProjectCard
                             logo={jonaldLogo}
                             title="Jonald"
-                            description="Estrategia completa de redes sociales para restaurante peruano. Contenido gastronómico que conecta con la cultura y sabor auténtico."
+                            description="Desarrollo una estrategia integral de redes sociales para la marca personal artística, potenciando su identidad como cantante y compositor. Creo contenido que transmite su energía, presencia escénica y conexión con el público, reforzando su imagen y posicionamiento digital."
                             images={[jonald1, jonald2, jonald3]}
-                            results="+180% de engagement | 50K nuevos seguidores en 6 meses"
+                            results=" Producción de contenido| Impacto | Reels y videos | Crecimiento digital. "
                         />
                     </article>
 
@@ -74,9 +74,9 @@ export default function Projects() {
                         <ProjectCard
                             logo={quqawLogo}
                             title="QuQaw"
-                            description="Estrategia completa de redes sociales para restaurante peruano. Contenido gastronómico que conecta con la cultura y sabor auténtico."
+                            description="Trabajo la marca desde su esencia, posicionándola no solo como restaurante, sino como una experiencia que se vive y se comparte. Desarrollo contenido visual estratégico que resalta sus platos, su ambiente y su personalidad. Además, incorporo un toque de humor en las publicaciones, alineado con el estilo y la visión del CEO, para generar cercanía"
                             images={[quqaw1, quqaw2, quqaw3, quqaw4]}
-                            results="+180% de engagement | 50K nuevos seguidores en 6 meses"
+                            results=" Producción de contenido | Engagement | Reels y videos | Crecimiento digital. "
                         />
                     </article>
 
@@ -85,9 +85,11 @@ export default function Projects() {
                         <ProjectCard
                             logo={lauraSerraLogo}
                             title="Laura Serra"
-                            description="Estrategia completa de redes sociales para restaurante peruano. Contenido gastronómico que conecta con la cultura y sabor auténtico."
+                            description="Trabajo la presencia digital de la marca potenciando su imagen y destacando la calidad de cada diseño de uñas.
+ Creo contenido visual que muestra el detalle, el acabado y la experiencia del servicio, reforzando la identidad de la marca. Además, compartimos información de valor para una comunidad que está en crecimiento, generando confianza y cercanía.
+"
                             images={[lauraSerra1,]}
-                            results="+180% de engagement | 50K nuevos seguidores en 6 meses"
+                            results="Producción de contenido | Visibilidad | Crecimiento digital | Comunidad. "
                         />
                     </article>
 
@@ -96,9 +98,9 @@ export default function Projects() {
                         <ProjectCard
                             logo={luxuryLogo}
                             title="The Luxury love BCN"
-                            description="Estrategia completa de redes sociales para restaurante peruano. Contenido gastronómico que conecta con la cultura y sabor auténtico."
+                            description="Potencio la presencia digital de la marca, posicionándola en redes sociales con una estrategia visual y comunicativa alineada a su identidad. Creamos contenido atractivo y sutil que genera curiosidad, conversación y conexión con la audiencia, manteniendo siempre una estética cuidada y coherente con el concepto de la tienda. "
                             images={[luxury1, luxury2, luxury3]}
-                            results="+180% de engagement | 50K nuevos seguidores en 6 meses"
+                            results="Producción de contenido | Deseo | Engagement | Crecimiento digital . "
                         />
                     </article>
 
