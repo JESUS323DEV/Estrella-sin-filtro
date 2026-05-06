@@ -17,7 +17,7 @@ export default function Services() {
 
 
                     <article>
-                        <div class="service-card">
+                        <div className="service-card">
                             <div className="strategy"><ChartSpline /></div>
                             <h3>Estrategia Digital</h3>
                             <p>Desarrollo de estrategias personalizadas basadas en análisis de mercado, competencia y comportamiento de tu audiencia para maximizar resultados.</p>
@@ -25,15 +25,15 @@ export default function Services() {
                     </article>
 
                     <article>
-                        <div class="service-card ">
-                            <div className="creation" ><Sparkles /></div>
+                        <div className="service-card">
+                            <div className="creation"><Sparkles /></div>
                             <h3>Creación de Contenido</h3>
                             <p>Diseño gráfico, videos, reels, stories y posts que conectan con tu audiencia. Contenido alineado con tu identidad de marca y objetivos comerciales.</p>
                         </div>
                     </article>
 
                     <article>
-                        <div class="service-card ">
+                        <div className="service-card">
                             <div className="community"><UserStar /></div>
                             <h3>Community Management</h3>
                             <p>Gestión de comunidad, respuesta a comentarios y mensajes, moderación y construcción de relaciones auténticas con tus seguidores.</p>
@@ -41,7 +41,7 @@ export default function Services() {
                     </article>
 
                     <article>
-                        <div class="service-card ">
+                        <div className="service-card">
                             <div className="social"><Vote /></div>
                             <h3>Gestión de Redes Sociales</h3>
                             <p>Administración completa de tus perfiles en Instagram, Facebook y TikTok. Informes detallados mensuales con métricas clave y optimización de estrategias.</p>

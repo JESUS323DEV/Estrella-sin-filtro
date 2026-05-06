@@ -1,16 +1,68 @@
-# React + Vite
+# Estrella Sin Filtro — Web Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio y sitio de servicios para **Estrella Sin Filtro**, Social Media Manager en Barcelona.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **Vite 7** (build tool con SWC)
+- **React Router DOM 7** (navegación SPA)
+- **Lucide React** (iconos)
+- CSS puro con variables y responsive design
 
-## React Compiler
+## Instalación
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+```bash
+cd web-site
+npm install
+```
 
-## Expanding the ESLint configuration
+## Variables de entorno
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Copia el archivo de ejemplo y rellena los valores reales:
+
+```bash
+cp .env.example .env
+```
+
+| Variable | Descripción |
+|---|---|
+| `VITE_WHATSAPP_NUMBER` | Número de WhatsApp con prefijo país (ej: +34600000000) |
+| `VITE_EMAIL` | Email de contacto |
+| `VITE_INSTAGRAM_URL` | URL del perfil de Instagram |
+| `VITE_TIKTOK_URL` | URL del perfil de TikTok |
+| `VITE_FACEBOOK_URL` | URL de la página de Facebook (dejar vacío para ocultar el botón) |
+
+## Scripts
+
+```bash
+npm run dev       # Servidor de desarrollo (http://localhost:5173)
+npm run build     # Build de producción en /dist
+npm run preview   # Vista previa del build de producción
+npm run lint      # Verificar errores con ESLint
+npm run format    # Formatear código con Prettier
+```
+
+## Estructura
+
+```
+src/
+├── components/
+│   ├── layout/        # Header y Footer
+│   ├── ProjectCard    # Tarjeta de proyecto con carrusel
+│   ├── ScrollHandler  # Sincroniza scroll con rutas
+│   └── ScrollSections # Scroll suave a secciones
+├── sections/          # Secciones de la página (Hero, Services, Projects…)
+├── assets/            # Imágenes, iconos y fotos de proyectos
+└── styles/            # CSS organizado por sección y componente
+```
+
+## Despliegue
+
+El sitio está desplegado en Netlify: https://estrellasinfiltro.netlify.app
+
+Para hacer un deploy manual:
+
+```bash
+npm run build
+# Sube la carpeta /dist a Netlify
+```

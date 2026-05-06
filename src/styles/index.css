@@ -14,6 +14,10 @@
     --spacing-xl: 6rem;
     --border-radius: 24px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --section-gap: 5rem;
+    --color-accent-rgb: 255, 107, 157;
+    --color-secondary-rgb: 201, 160, 220;
+    --color-border: #ddd;
   }
 
   *,
@@ -31,9 +35,10 @@
 
   #services,
   #projects,
-  #webServices {
+  #webServices,
+  #contact {
 
-    margin-top: 5rem;
+    margin-top: var(--section-gap);
   }
 
   #services,

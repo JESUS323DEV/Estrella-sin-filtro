@@ -128,11 +128,19 @@
 
         width: 200px;
         margin-top: 2.5rem;
+    }
 
 
-
+    .contact-wrap {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 5rem;
+        width: min(700px, calc(100% - 4rem));
 
     }
+
+
+
 
     /*=======================================SERVICES=================================*/
 
@@ -192,6 +200,11 @@
 
         width: 80%;
         margin: auto;
+    }
+
+    .contact-body {
+
+        padding: 1.5rem;
     }
 
     /*=======================================SERVICES WEB=================================*/
@@ -474,6 +487,25 @@
     .content-direct h4 {
 
         font-size: 1.2rem;
+    }
+
+
+
+    .contact-wrap {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 5rem;
+        width: min(700px, calc(100% - 4rem));
+
+    }
+
+
+    .contact-wrap {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 5rem;
+        width: min(700px, calc(100% - 4rem));
+
     }
 
     /*=======================================WEB SERVICES=================================*/
@@ -822,6 +854,11 @@
 
     }
 
+    .contact-body {
+
+        padding: 1.5rem;
+    }
+
 
 }
 
@@ -1083,6 +1120,15 @@
         font-size: 1.3rem;
     }
 
+
+    .contact-wrap {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 5rem;
+        width: min(700px, calc(100% - 4rem));
+
+    }
+
     /*=======================================WEB SERVICES=================================*/
 
 
@@ -1122,6 +1168,11 @@
         margin: 0;
         min-height: 220px;
 
+    }
+
+    .contact-body {
+
+        padding: 1.5rem;
     }
 
 }
@@ -1358,6 +1409,8 @@
 
         display: grid !important;
         grid-template-columns: 1fr 1fr;
+
+
     }
 
     .subtitle-contact {
@@ -1370,6 +1423,10 @@
 
     }
 
+    .contact-header {
+
+        margin-top: 6rem;
+    }
 
     .subtitle-contact p {
 
@@ -1381,6 +1438,16 @@
 
         font-size: 1.3rem;
     }
+
+    .contact-wrap {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 10rem;
+        width: min(700px, calc(100% - 4rem));
+
+    }
+
+    
 
     /*=======================================WEB SERVICES=================================*/
 
@@ -1424,6 +1491,11 @@
         margin: 0;
         min-height: 220px;
 
+    }
+
+    .contact-body {
+
+        padding: 1.5rem;
     }
 }
 
@@ -1524,7 +1596,7 @@
         display: none !important;
     }
 
-    
+
 
     .project-card {
 

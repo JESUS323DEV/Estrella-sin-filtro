@@ -1,8 +1,7 @@
 .cont-webServices {
 
-    background: linear-gradient(135deg, #0A0E27 0%, #1a1f41 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1a1f41 100%);
     padding-bottom: 3rem;
-    margin-top: 5rem;
 
     
 
@@ -99,7 +98,7 @@ article .cardServices {
 
 .body-card svg {
 
-    color: #FF6B9D;
+    color: var(--color-accent);
     width: 20px;
     height: 20px;
 
@@ -126,11 +125,11 @@ article .cardServices {
     color: white;
     border-radius: 1rem;
     padding: 1rem 2rem;
-    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+    box-shadow: 0 10px 30px rgba(var(--color-accent-rgb), 0.3);
 }
 
 .cta1 a:hover {
 
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.4);
+    box-shadow: 0 15px 40px rgba(var(--color-accent-rgb), 0.4);
 }

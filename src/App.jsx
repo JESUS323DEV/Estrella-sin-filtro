@@ -1,4 +1,4 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //IMPORT SECTIONS 
@@ -31,7 +31,7 @@ const HomeLayout = () => (
 function App() {
 
   return (
-    < BrowserRouter >
+    <BrowserRouter>
 
       <ScrollHandler />
       
@@ -46,7 +46,7 @@ function App() {
 
       </Routes>
 
-    </ BrowserRouter >
+    </BrowserRouter>
 
   );
 }

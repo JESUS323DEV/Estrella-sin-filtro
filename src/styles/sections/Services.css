@@ -1,9 +1,9 @@
     .service-card {
-        background: white;
+        background: var(--color-card);
         padding: 3rem 2rem;
         border-radius: var(--border-radius);
         transition: var(--transition);
-        border: 1px solid rgba(255, 107, 157, 0.1);
+        border: 1px solid rgba(var(--color-accent-rgb), 0.1);
         position: relative;
         overflow: hidden;
 
@@ -113,5 +113,5 @@
         
         border-radius: 0.5rem;
         color: white;
-        box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+        box-shadow: 0 10px 30px rgba(var(--color-accent-rgb), 0.3);
     }
