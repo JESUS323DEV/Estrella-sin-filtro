@@ -1,7 +1,7 @@
 //import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-//IMPORT SECTIONS 
+//IMPORT SECTIONS
 import Header from './components/layout/Header'
 import Hero from "./sections/Hero"
 import Services from './sections/Services'
@@ -9,6 +9,10 @@ import Projects from './sections/Projects'
 import WebDevServices from './sections/WebDevServices'
 import Contact from './sections/Contact'
 import Footer from './components/layout/Footer'
+
+//IMPORT PAGES
+import AvisoLegal from './pages/AvisoLegal'
+import Privacidad from './pages/Privacidad'
 
 //IMPORT SCROLL HANDLER
 import ScrollHandler from './components/ScrollHandler'
@@ -42,7 +46,8 @@ function App() {
         <Route path='/proyectos' element={<HomeLayout />} />
         <Route path='/desarrollo-web' element={<HomeLayout />} />
         <Route path='/contacto' element={<HomeLayout />} />
-
+        <Route path='/aviso-legal' element={<AvisoLegal />} />
+        <Route path='/politica-privacidad' element={<Privacidad />} />
 
       </Routes>
 

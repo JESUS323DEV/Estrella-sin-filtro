@@ -8,7 +8,7 @@
   top: 0;
   width: 100%;
   background: rgba(250, 250, 250, 0.95);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 107, 156, 0.241);
   animation: slideDown 0.6s ease-out;
@@ -73,15 +73,34 @@
   font-size: 1.5rem;
 }
 
-/* Mobile menu - Solo estos estilos para mobile */
+.burger button svg {
+  display: block;
+  animation: iconPop 0.25s ease;
+}
+
+@keyframes iconPop {
+  from { transform: scale(0.4) rotate(-90deg); opacity: 0; }
+  to   { transform: scale(1)   rotate(0deg);   opacity: 1; }
+}
+
+/* Mobile menu */
 .mobile-menu {
   position: fixed;
   top: 7.2rem;
-  background-color: var(--color-bg);
   left: 0;
   width: 100%;
   min-height: 100vh;
   z-index: 5;
+  transform: translateY(-110%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.35s ease, opacity 0.3s ease, visibility 0.35s;
+}
+
+.mobile-menu.is-open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile-menu::before {
@@ -112,7 +131,15 @@
   border-bottom: 1px solid var(--color-accent);
   padding-bottom: 0.4rem;
   padding-left: 0.5rem;
+  opacity: 0;
+  transform: translateX(-18px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
 }
+
+.mobile-menu.is-open li:nth-child(1) { opacity: 1; transform: translateX(0); transition-delay: 0.08s; }
+.mobile-menu.is-open li:nth-child(2) { opacity: 1; transform: translateX(0); transition-delay: 0.15s; }
+.mobile-menu.is-open li:nth-child(3) { opacity: 1; transform: translateX(0); transition-delay: 0.22s; }
+.mobile-menu.is-open li:nth-child(4) { opacity: 1; transform: translateX(0); transition-delay: 0.29s; }
 
 .mobile-menu li a {
   text-decoration: none;

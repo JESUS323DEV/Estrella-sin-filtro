@@ -70,25 +70,16 @@ export default function Header() {
             <header>
                 <nav>
                     <div className="cont-nav">
-                        <div className='logo'>
+                        <Link to="/inicio" className='logo' onClick={() => handleNavClick('inicio')}>
                             <span className='estrella'>Estrella</span>
                             <span className="sin">sin</span>
                             <span className="filtro">filtro</span>
-                        </div>
+                        </Link>
 
                         <div className="cont-menu">
                             {/* Menu Desktop */}
                             <div className='links-nav desktop-menu'>
                                 <ul>
-                                    <li>
-                                        <Link
-                                            to="/inicio"
-                                            className={isActive('/inicio')}
-                                            onClick={() => handleNavClick('inicio')}
-                                        >
-                                            Inicio
-                                        </Link>
-                                    </li>
                                     <li>
                                         <Link
                                             to="/servicios"
@@ -136,67 +127,54 @@ export default function Header() {
                             </div>
 
                             {/* Menu Mobile */}
-                            {openMenu && (
-                                <div className='links-nav mobile-menu'>
-                                    <ul>
-                                        <li>
-                                            <Link
-                                                to="/inicio"
-                                                onClick={() => {
-                                                    setOpenMenu(false);
-                                                    handleNavClick('inicio');
-                                                }}
-                                            >
-                                                Inicio
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to="/servicios"
-                                                onClick={() => {
-                                                    setOpenMenu(false);
-                                                    handleNavClick('services');
-                                                }}
-                                            >
-                                                Servicios
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to="/proyectos"
-                                                onClick={() => {
-                                                    setOpenMenu(false);
-                                                    handleNavClick('projects');
-                                                }}
-                                            >
-                                                Proyectos
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to="/desarrollo-web"
-                                                onClick={() => {
-                                                    setOpenMenu(false);
-                                                    handleNavClick('webServices');
-                                                }}
-                                            >
-                                                Desarrollo Web
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to="/contacto"
-                                                onClick={() => {
-                                                    setOpenMenu(false);
-                                                    handleNavClick('contact');
-                                                }}
-                                            >
-                                                Contacto
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            )}
+                            <div className={`links-nav mobile-menu${openMenu ? ' is-open' : ''}`}>
+                                <ul>
+                                    <li>
+                                        <Link
+                                            to="/servicios"
+                                            onClick={() => {
+                                                setOpenMenu(false);
+                                                handleNavClick('services');
+                                            }}
+                                        >
+                                            Servicios
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/proyectos"
+                                            onClick={() => {
+                                                setOpenMenu(false);
+                                                handleNavClick('projects');
+                                            }}
+                                        >
+                                            Proyectos
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/desarrollo-web"
+                                            onClick={() => {
+                                                setOpenMenu(false);
+                                                handleNavClick('webServices');
+                                            }}
+                                        >
+                                            Desarrollo Web
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/contacto"
+                                            onClick={() => {
+                                                setOpenMenu(false);
+                                                handleNavClick('contact');
+                                            }}
+                                        >
+                                            Contacto
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
