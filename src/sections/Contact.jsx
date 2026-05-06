@@ -17,7 +17,7 @@ export default function Contact() {
         e.preventDefault()
         const text = `Hola, soy ${form.nombre} (${form.correo}): ${form.mensaje}`
         window.open(
-            `https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
+            `https://wa.me/+34640839981?text=${encodeURIComponent(text)}`,
             '_blank'
         )
     }
@@ -99,34 +99,29 @@ export default function Contact() {
                         <h3>Contacto directo</h3>
                         <div className="contact-info">
                             <a
-                                href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`}
+                                href="https://wa.me/+34640839981"
                                 target="_blank"
                                 className="contact-info-item"
                             >
                                 <Phone size={20} />
-                                <span>{import.meta.env.VITE_WHATSAPP_NUMBER}</span>
+                                <span>+34 640 83 99 81</span>
                             </a>
                             <a
-                                href={`mailto:${import.meta.env.VITE_EMAIL}`}
+                                href="mailto:Gonzalesulloae@gmail.com"
                                 className="contact-info-item"
                             >
                                 <Mail size={20} />
-                                <span>{import.meta.env.VITE_EMAIL}</span>
+                                <span>Gonzalesulloae@gmail.com</span>
                             </a>
                         </div>
 
                         <div className="contact-socials">
                             <h3>Redes sociales</h3>
                             <span className='cont-socials-wrap'>
-                                <a href={import.meta.env.VITE_INSTAGRAM_URL} target="_blank">
+                                <a href="https://www.instagram.com/estrellasinfiltro" target="_blank">
                                     <img src={insta} loading="lazy" alt="Instagram" />
                                 </a>
-                                {import.meta.env.VITE_FACEBOOK_URL && (
-                                    <a href={import.meta.env.VITE_FACEBOOK_URL} target="_blank">
-                                        <img loading="lazy" src={Face} alt="Facebook" />
-                                    </a>
-                                )}
-                                <a href={import.meta.env.VITE_TIKTOK_URL} target="_blank">
+                                <a href="https://www.tiktok.com/@estrellasinfiltro" target="_blank">
                                     <img loading="lazy" src={tikTok} alt="TikTok" />
                                 </a>
                             </span>
