@@ -89,11 +89,12 @@ export default function WebDevServices() {
                         </article>
 
                         <div className="cta1">
-                            <Link to="/contacto"
-                                onClick={() => ScrollSections("contact")}
-                            >
+                            <a href="https://turnoya-demo.netlify.app/jesusDev" target="_blank" rel="noopener noreferrer">
                                 Contáctanos
-                            </Link>
+                            </a>
+                            <a href="https://webjesusdev.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                Conoce mi trabajo
+                            </a>
                         </div>
 
                     </div>

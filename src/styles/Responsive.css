@@ -1,4 +1,4 @@
-/* =====================
+﻿/* =====================
    MEDIA QUERIES RESPONSIVE
    ===================== */
 
@@ -211,6 +211,30 @@
     .cardServices {
 
         width: 50% !important;
+    }
+
+    .cta1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+
+    }
+
+
+
+    /*=======================================FOOTER=================================*/
+
+    .cont-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-nav {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
     }
 
@@ -220,91 +244,10 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-
-    #services,
-    #projects {
-
-        scroll-margin-top: 10rem;
-    }
-
-
     #contact {
 
         scroll-margin-top: 5rem;
 
-    }
-
-    #webServices {
-        scroll-margin-top: 8rem;
-
-
-    }
-
-    /*=======================================HEADER=================================*/
-
-
-
-    .cont-nav {
-        justify-content: space-around;
-        padding: 1rem 3rem;
-    }
-
-    .cont-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    /* Mostrar desktop menu */
-    .desktop-menu {
-        display: flex !important;
-        position: static !important;
-        top: auto !important;
-        left: auto !important;
-        width: auto !important;
-        min-height: auto !important;
-        background: none !important;
-        z-index: auto !important;
-    }
-
-    .desktop-menu::before {
-        display: none !important;
-    }
-
-    .desktop-menu ul {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 2.5rem !important;
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-        font-size: 1rem !important;
-    }
-
-    .desktop-menu li {
-        border-bottom: none !important;
-        padding: 0 !important;
-    }
-
-    .desktop-menu li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        transition: color 0.3s;
-    }
-
-    .desktop-menu li a:hover {
-        color: var(--color-accent);
-    }
-
-    /* Ocultar burger */
-    .burger {
-        display: none !important;
-    }
-
-    /* Ocultar mobile menu */
-    .mobile-menu {
-        display: none !important;
     }
 
     /*=======================================HERO=================================*/
@@ -442,17 +385,6 @@
 
     }
 
-
-    .project-logo {
-
-        width: 300px !important;
-    }
-
-    .gallery-image {
-
-        height: 400px;
-    }
-
     /*=======================================CONTACT=================================*/
 
 
@@ -500,58 +432,6 @@
     }
 
 
-    .contact-wrap {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        gap: 5rem;
-        width: min(700px, calc(100% - 4rem));
-
-    }
-
-    /*=======================================WEB SERVICES=================================*/
-
-
-    .container-webServices {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0;
-    }
-
-    .title,
-    .cta1 {
-
-        grid-column: 1/-1;
-    }
-
-    .title {
-
-        margin-bottom: 4rem;
-    }
-
-    .cta1 {
-
-        margin-top: 4rem;
-    }
-
-    article .cardServices {
-
-        min-height: 510px;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    }
-
-    .body-card ul {
-
-        margin: 0;
-        min-height: 220px;
-
-    }
-
-
-
-
 
 }
 
@@ -560,92 +440,12 @@
 
 
 
-    #services,
-    #projects {
-
-        scroll-margin-top: 10rem;
-    }
-
-
     #contact {
 
         scroll-margin-top: 5rem;
 
     }
 
-    #webServices {
-        scroll-margin-top: 8rem;
-
-
-    }
-
-    /*=======================================HEADER=================================*/
-
-
-
-    .cont-nav {
-        justify-content: space-around;
-        padding: 1rem 3rem;
-    }
-
-    .cont-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    /* Mostrar desktop menu */
-    .desktop-menu {
-        display: flex !important;
-        position: static !important;
-        top: auto !important;
-        left: auto !important;
-        width: auto !important;
-        min-height: auto !important;
-        background: none !important;
-        z-index: auto !important;
-    }
-
-    .desktop-menu::before {
-        display: none !important;
-    }
-
-    .desktop-menu ul {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 2.5rem !important;
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-        font-size: 1rem !important;
-    }
-
-    .desktop-menu li {
-        border-bottom: none !important;
-        padding: 0 !important;
-    }
-
-    .desktop-menu li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        font-size: 1.2rem;
-        transition: color 0.3s;
-    }
-
-    .desktop-menu li a:hover {
-        color: var(--color-accent);
-    }
-
-    /* Ocultar burger */
-    .burger {
-        display: none !important;
-    }
-
-    /* Ocultar mobile menu */
-    .mobile-menu {
-        display: none !important;
-    }
 
     /*=======================================HERO=================================*/
     h2 {
@@ -769,17 +569,6 @@
     }
 
 
-
-    .project-logo {
-
-        width: 300px !important;
-    }
-
-    .gallery-image {
-
-        height: 400px;
-    }
-
     /*=======================================CONTACT=================================*/
 
 
@@ -813,65 +602,11 @@
         font-size: 1.3rem;
     }
 
-    /*=======================================WEB SERVICES=================================*/
-
-
-    .container-webServices {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0;
-    }
-
-    .title,
-    .cta1 {
-
-        grid-column: 1/-1;
-    }
-
-    .title {
-
-        margin-bottom: 4rem;
-    }
-
-    .cta1 {
-
-        margin-top: 4rem;
-    }
-
-    article .cardServices {
-
-        min-height: 510px;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    }
-
-    .body-card ul {
-
-        margin: 0;
-        min-height: 220px;
-
-    }
-
-    .contact-body {
-
-        padding: 1.5rem;
-    }
-
-
 }
 
 /*XL laptos grandes (1280px – 1399px) */
 @media (min-width: 1280px) and (max-width: 1399px) {
 
-
-
-    #services,
-    #projects {
-
-        scroll-margin-top: 10rem;
-    }
 
 
     #contact {
@@ -880,79 +615,6 @@
 
     }
 
-    #webServices {
-        scroll-margin-top: 8rem;
-
-
-    }
-
-    /*=======================================HEADER=================================*/
-
-
-
-    .cont-nav {
-        justify-content: space-around;
-        padding: 1rem 3rem;
-    }
-
-    .cont-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    /* Mostrar desktop menu */
-    .desktop-menu {
-        display: flex !important;
-        position: static !important;
-        top: auto !important;
-        left: auto !important;
-        width: auto !important;
-        min-height: auto !important;
-        background: none !important;
-        z-index: auto !important;
-    }
-
-    .desktop-menu::before {
-        display: none !important;
-    }
-
-    .desktop-menu ul {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 2.5rem !important;
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-        font-size: 1rem !important;
-    }
-
-    .desktop-menu li {
-        border-bottom: none !important;
-        padding: 0 !important;
-    }
-
-    .desktop-menu li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        font-size: 1.2rem;
-        transition: color 0.3s;
-    }
-
-    .desktop-menu li a:hover {
-        color: var(--color-accent);
-    }
-
-    /* Ocultar burger */
-    .burger {
-        display: none !important;
-    }
-
-    /* Ocultar mobile menu */
-    .mobile-menu {
-        display: none !important;
-    }
 
     /*=======================================HERO=================================*/
     h2 {
@@ -1076,17 +738,6 @@
     }
 
 
-
-    .project-logo {
-
-        width: 300px !important;
-    }
-
-    .gallery-image {
-
-        height: 400px;
-    }
-
     /*=======================================CONTACT=================================*/
 
 
@@ -1129,51 +780,6 @@
 
     }
 
-    /*=======================================WEB SERVICES=================================*/
-
-
-    .container-webServices {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0;
-    }
-
-    .title,
-    .cta1 {
-
-        grid-column: 1/-1;
-    }
-
-    .title {
-
-        margin-bottom: 4rem;
-    }
-
-    .cta1 {
-
-        margin-top: 4rem;
-    }
-
-    article .cardServices {
-
-        min-height: 510px;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    }
-
-    .body-card ul {
-
-        margin: 0;
-        min-height: 220px;
-
-    }
-
-    .contact-body {
-
-        padding: 1.5rem;
-    }
 
 }
 
@@ -1189,7 +795,7 @@
 
     #contact {
 
-        scroll-margin-top: 5rem;
+        scroll-margin-top: 9rem;
 
     }
 
@@ -1199,73 +805,6 @@
 
     }
 
-    /*=======================================HEADER=================================*/
-
-
-
-    .cont-nav {
-        justify-content: space-around;
-        padding: 1rem 3rem;
-    }
-
-    .cont-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    /* Mostrar desktop menu */
-    .desktop-menu {
-        display: flex !important;
-        position: static !important;
-        top: auto !important;
-        left: auto !important;
-        width: auto !important;
-        min-height: auto !important;
-        background: none !important;
-        z-index: auto !important;
-    }
-
-    .desktop-menu::before {
-        display: none !important;
-    }
-
-    .desktop-menu ul {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 2.5rem !important;
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-        font-size: 1rem !important;
-    }
-
-    .desktop-menu li {
-        border-bottom: none !important;
-        padding: 0 !important;
-    }
-
-    .desktop-menu li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        font-size: 1.2rem;
-        transition: color 0.3s;
-    }
-
-    .desktop-menu li a:hover {
-        color: var(--color-accent);
-    }
-
-    /* Ocultar burger */
-    .burger {
-        display: none !important;
-    }
-
-    /* Ocultar mobile menu */
-    .mobile-menu {
-        display: none !important;
-    }
 
     /*=======================================HERO=================================*/
     h2 {
@@ -1389,17 +928,6 @@
     }
 
 
-
-    .project-logo {
-
-        width: 300px !important;
-    }
-
-    .gallery-image {
-
-        height: 400px;
-    }
-
     /*=======================================CONTACT=================================*/
 
 
@@ -1447,63 +975,30 @@
 
     }
 
-    
-
-    /*=======================================WEB SERVICES=================================*/
 
 
-    .container-webServices {
 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        width: 80%;
-        margin: auto;
-    }
-
-    .title,
-    .cta1 {
-
-        grid-column: 1/-1;
-    }
-
-    .title {
-
-        margin-bottom: 4rem;
-    }
-
-    .cta1 {
-
-        margin-top: 4rem;
-    }
-
-    article .cardServices {
-
-        min-height: 510px;
-        width: 400px;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    }
-
-    .body-card ul {
-
-        margin: 0;
-        min-height: 220px;
-
-    }
-
-    .contact-body {
-
-        padding: 1.5rem;
-    }
 }
 
 
 /* ===== DESKTOP (1024px+) ===== */
 @media (min-width: 992px) {
 
+    /*=======================================SCROLL MARGINS=================================*/
+
+    #services,
+    #projects {
+        scroll-margin-top: 10rem;
+    }
+
+    #webServices {
+        scroll-margin-top: 8rem;
+    }
+
+    /*=======================================HEADER=================================*/
+
     .cont-nav {
+        justify-content: space-around;
         padding: 1rem 3rem;
     }
 
@@ -1601,5 +1096,23 @@
     .project-card {
 
         min-height: 900px;
+    }
+
+    /*=======================================PROJECTS=================================*/
+
+    .project-logo {
+        width: 300px !important;
+    }
+
+    .gallery-image {
+        height: 400px;
+    }
+
+    .cta1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+
     }
 }
