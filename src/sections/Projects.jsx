@@ -38,16 +38,6 @@ import jonald1 from "../assets/projects/jonald/jonald-1.png"
 import jonald2 from "../assets/projects/jonald/jonald-2.png"
 import jonald3 from "../assets/projects/jonald/jonald-3.png"
 
-//Cgm Abogados
-import cgmLogo from "../assets/projects/cgm-abogados/cgm-logo.png"
-import cgm1 from "../assets/projects/cgm-abogados/cgm1.png"
-import cgm2 from "../assets/projects/cgm-abogados/cgm2.png"
-import cgm3 from "../assets/projects/cgm-abogados/cgm3.png"
-import cgm4 from "../assets/projects/cgm-abogados/cgm4.png"
-
-
-
-
 
 
 export default function Projects() {
@@ -114,27 +104,6 @@ export default function Projects() {
                             results="Producción de contenido | Deseo | Engagement | Crecimiento digital . "
                         />
                     </article>
-
-                    <article>
-                        {/* CGM ABOGADOS*/}
-                        <ProjectCard
-
-                        logo ={cgmLogo}
-                        title="CGM ABOGADOS"
-                        description= "Desarrollo una estrategia de redes sociales para CGM Abogados, enfocada en destacar su experiencia y compromiso con los clientes. Creo contenido que resalta casos de éxito, testimonios y el valor de sus servicios legales, generando confianza y conexión con la audiencia."
-                        images={[cgm1, cgm2, cgm3, cgm4]}
-                        results="Producción de contenido | Confianza | Engagement | Crecimiento digital. "
-
-
-
-
-
-                        />
-
-                    </article>
-
-
-
                 </div>
             </div>
         </section>
